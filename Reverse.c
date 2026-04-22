@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Node structure
+
 struct Node {
     int data;
     struct Node* next;
 };
 
-// Function to reverse the linked list
+
 struct Node* reverseList(struct Node* head) {
     struct Node* prev = NULL;
     struct Node* current = head;
@@ -19,7 +19,7 @@ struct Node* reverseList(struct Node* head) {
         prev = current;        
         current = next;        
     }
-    return prev; // prev becomes new head
+    return prev; // 
 }
 
 // Helper: insert node at end
